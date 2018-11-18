@@ -32,7 +32,7 @@ function copyTextToClipboard(text) {
     document.body.removeChild(textArea);
 }
 
-// console.log("TripleClick Applied: 1.13");
+// console.log("TripleClick Applied: 1.14");
 window.addEventListener('click', function(evt) {
     if (evt.detail === 3) {
         // console.log("TripleClick: TripleClick initiated");

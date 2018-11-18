@@ -3,7 +3,7 @@
 
     "name": "Chrome Plus",
     "description": "Reimagine your web experience",
-    "version": "1.12",
+    "version": "1.14",
 
     "content_scripts": [
         {
