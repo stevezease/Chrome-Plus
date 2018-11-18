@@ -1,0 +1,15 @@
+var timeout, clicker = $('#clicker');
+var count = 0;
+
+clicker.mousedown(function(){
+    timeout = setInterval(function(){
+        clicker.text(count++);
+    }, 500);
+
+    return false;
+});
+
+$(document).mouseup(function(){
+    clearInterval(timeout);
+    return false;
+});

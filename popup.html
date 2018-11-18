@@ -1,49 +1,70 @@
-<!doctype html>
+<!DOCTYPE html>
 <!--
- This page is shown when the extension button is clicked, because the
- "browser_action" field in manifest.json contains the "default_popup" key with
- value "popup.html".
- -->
+    This page is shown when the extension button is clicked, because the
+    "browser_action" field in manifest.json contains the "default_popup" key with
+    value "popup.html".
+-->
 <html>
-  <head>
-    <title>Triple Click</title>
-    <style>
-      body {
-        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
-        font-size: 100%;
-        width: 200px;
-      }
-      #status {
-        /* avoid an excessively wide status text */
-        white-space: pre;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        max-width: 400px;
-      }
-    </style>
+    <head>
+        <title>Triple Click</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:400,600"
+            rel="stylesheet"
+        />
+        <style>
+            body {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 100%;
+                width: 200px;
+            }
+            #status {
+                /* avoid an excessively wide status text */
+                white-space: pre;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                max-width: 400px;
+            }
+            h4 {
+                margin-bottom: 0px;
+            }
+        </style>
 
-    <!--
-      - JavaScript and HTML must be in separate files: see our Content Security
-      - Policy documentation[1] for details and explanation.
-      -
-      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
-     -->
-  </head>
-  <body>
-      <h4> Picture Button </h4>
-      <select name="textClick" form="textform">
-        <option value="1">Copy Entire Paragraph</option>
-        <option value="2">Copy Entire Sentence</option>
-      </select>
-      <h4> Triple Clicking Text </h4>
-      <select name="textClick" form="textform">
-        <option value="1">Copy Entire Paragraph</option>
-        <option value="2">Copy Entire Sentence</option>
-      </select>
-      <h4> Triple Clicking Image</h4>
-      <select name="textClick" form="textform">
-        <option value="1">Copy Image URL</option>
-      </select>
-  </body>
+        <!--
+            - JavaScript and HTML must be in separate files: see our Content Security
+            - Policy documentation[1] for details and explanation.
+            -
+            - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+        -->
+    </head>
+    <body>
+        <!--
+            <h4> Mouse Down</h4>
+            <select name="textClick" form="textform">
+              <option value="1">Copy Entire Paragraph</option>
+              <option value="2">Copy Entire Sentence</option>
+            </select>
+            <h4> Triple Clicking Text </h4>
+            <select name="textClick" form="textform">
+              <option value="0">None</option>
+              <option value="1">Copy Entire Paragraph</option>
+            </select>
+            <h4> Triple Clicking Image</h4>
+            <select name="textClick" form="textform">
+              <option value="0">None</option>
+              <option value="1">Copy Image URL</option>
+            </select>
+        -->
+        <center>
+            <img src="icon.png" />
+
+            <p>Chrome Plus v1.12 is already working!</p>
+            <a
+                href="http://jinnovate.com/chrome/introduction.html"
+                target="_blank"
+            >
+                Instructions
+            </a>
+        </center>
+    </body>
+    <script></script>
 </html>
-
